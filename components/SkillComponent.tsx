@@ -1,7 +1,8 @@
 import classNames from "classnames";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+
 type Skill = {
-    image: string;
+    image: string | StaticImageData;
     name?: string;
 };
 

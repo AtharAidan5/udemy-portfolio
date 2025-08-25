@@ -16,7 +16,7 @@ const DarkLight = () => {
     if (!mounted) return null; // Prevents mismatched icons during hydration
 
     return (
-        <div onClick={() => setTheme(resolvedTheme === 'light' ? 'dark' : 'light')} className="fixed top-4 right-4 w-12 h-[18px] rounded-full bg-[#808080] flex items-center">
+        <div onClick={() => setTheme(resolvedTheme === 'light' ? 'dark' : 'light')} className="fixed top-4 right-4 w-12 h-[18px] rounded-full bg-[#808080] flex items-center z-[9999]">
             <span className={classNames(
                 "w-7 h-7 flex items-center justify-center rounded-full transition-all duration-300",
                 {
