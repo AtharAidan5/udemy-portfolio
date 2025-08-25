@@ -18,7 +18,7 @@ const Projects = () => {
         source_code: string;
         demo: string;
     };
-    const [details, setDetails] = useState<Project | null>(null);
+    const [details, setDetails] = useState<Project | undefined>(undefined);
     const toggleModel = () => {
         setState(!state);
     }
