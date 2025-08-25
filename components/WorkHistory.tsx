@@ -26,7 +26,7 @@ const WorkHistory = () => {
                                 <SkillComponent key={skill.id} skill={skill} />
                             ))}
                             </div>}
-                        {work.options && <div className='mt-2'>
+                        {work?.options && <div className='mt-2'>
                             {work?.options?.map((option, key) => (
                                 <li key={key} className='text-base font-semibold'>{option}</li>
                             ))}
