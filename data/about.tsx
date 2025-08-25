@@ -1,0 +1,6 @@
+const about = {
+  heading: "Hello Everyone",
+  bio: "I am a Software Engineering student at Universiti Putra Malaysia, passionate about building technology that makes life easier, more connected, and more meaningful. Born and raised in Jakarta, Indonesia, I have always been curious about how things work—from lines of code to the bigger systems that shape our digital world. Right now, I am exploring the world of web development, focusing on Next.js and Tailwind CSS, while also diving deeper into software architecture, databases, and machine learning. I enjoy turning ideas into functional, user-friendly applications—whether it is a personal project, a university assignment, or a collaboration with others. Outside of coding, you will often find me on the basketball court, traveling to discover new perspectives, or working out to stay sharp both mentally and physically. My long-term goal? To leverage technology to make the world a better place—whether that means creating smarter applications, improving accessibility, or designing platforms that connect people.",
+  bioStyle: { textAlign: "justify" },
+};
+export default about;
