@@ -4,6 +4,13 @@ import { TbWorld } from "react-icons/tb";
 import Image from "next/image";
 import SkillComponent from "./SkillComponent";
 
+type Skill = {
+    id: string | number;
+    name: string;
+    image: string;
+    // Add other properties as needed
+};
+
 type ModelProps = {
     state: boolean;
     details?: any;
@@ -26,14 +33,8 @@ const Model = ({ state, details, toggleModel }: ModelProps) => {
                             {details.title}
                         </h2>
                         <div className="flex flex-wrap items-center gap-3 mt-4">
-                            {details.skills.map((skill: { id?: any; image?: string; name?: string | undefined; }) => (
-                                <SkillComponent
-                                    skill={{
-                                        ...skill,
-                                        image: skill.image ?? ""
-                                    }}
-                                    key={skill.id}
-                                />
+                            {details.skills.map((skill: Skill) => (
+                                <SkillComponent skill={skill} key={skill.id} />
                             ))}
                         </div>
                         <div className="flex flex-wrap items-center gap-3 mt-3">
