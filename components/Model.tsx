@@ -10,6 +10,12 @@ type ModelProps = {
     toggleModel: () => void;
 };
 
+type Skill = {
+    id: number;
+    name: string;
+    image: string;
+};
+
 const Model = ({ state, details, toggleModel }: ModelProps) => {
     return state ? (
         <div className="fixed inset-0 w-full h-screen p-4 backdrop-blur z-[9999999] flex items-center justify-center">
@@ -26,7 +32,7 @@ const Model = ({ state, details, toggleModel }: ModelProps) => {
                             {details.title}
                         </h2>
                         <div className="flex flex-wrap items-center gap-3 mt-4">
-                            {details.skills.map((skill: any) => (
+                            {details.skills.map((skill: Skill) => (
                                 <SkillComponent skill={skill} key={skill.id} />
                             ))}
                         </div>
