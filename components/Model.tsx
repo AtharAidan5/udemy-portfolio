@@ -26,8 +26,14 @@ const Model = ({ state, details, toggleModel }: ModelProps) => {
                             {details.title}
                         </h2>
                         <div className="flex flex-wrap items-center gap-3 mt-4">
-                            {details.skills.map((skill) => (
-                                <SkillComponent skill={skill} key={skill.id} />
+                            {details.skills.map((skill: { id?: any; image?: string; name?: string | undefined; }) => (
+                                <SkillComponent
+                                    skill={{
+                                        ...skill,
+                                        image: skill.image ?? ""
+                                    }}
+                                    key={skill.id}
+                                />
                             ))}
                         </div>
                         <div className="flex flex-wrap items-center gap-3 mt-3">
