@@ -15,10 +15,9 @@ export default function Home() {
           <Header />
           <Contacts />
           <About />
-          <Skills />
           <WorkHistory />
           <Projects />
-          <Reviews />
+          <Skills />
         </div>
       </main>
       <Footer />

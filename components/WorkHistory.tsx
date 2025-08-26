@@ -25,12 +25,12 @@ const WorkHistory = () => {
                             {work?.skills?.map(skill => (
                                 <SkillComponent key={skill.id} skill={skill} />
                             ))}
-                            </div>}
+                        </div>}
                         {work?.options && <div className='mt-2'>
                             {work?.options?.map((option, key) => (
                                 <li key={key} className='text-base font-semibold'>{option}</li>
                             ))}
-                            </div>}
+                        </div>}
                     </div>
                 </div>
             ))}

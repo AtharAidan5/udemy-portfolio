@@ -35,11 +35,11 @@ const Model = ({ state, details, toggleModel }: ModelProps) => {
                     <div className="relative w-full lg:w-[400px] rounded-lg overflow-hidden">
                         <div className="pt-[56.25%]">
                             <Image
-  src={details?.image ?? "/default-image.png"}
-  alt={details?.alt || "Image"}
-  fill
-  className="w-full h-full absolute inset-0"
-/>
+                                src={details?.image ?? "/default-image.png"}
+                                alt={details?.alt || "Image"}
+                                fill
+                                className="w-full h-full absolute inset-0"
+                            />
                         </div>
                     </div>
                     <div className="flex-1 mt-5 lg:mt-0">
